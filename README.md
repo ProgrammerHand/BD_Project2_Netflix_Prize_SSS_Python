@@ -69,49 +69,45 @@ Uruchamiamy konsumenta dannych rzeczywistych
 source ./realtime_database_consumer.sh
 ```
 Gdy w terminalu zacząl pojawiać się komunikat "Added Data" możemy powiedzieć że konsument dziala
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/dd44933a-c429-4461-82f7-89058561e69b)
 Następnie uruchamiamy konsumenta danych surowych
 ```
 source ./raw_input_consumer.sh
 ```
 Tutaj czekamy na komunikat "Subscribed to topic: ____ with bootstrap server ___"
-
-
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/c725d918-9c59-4be4-b9e2-bcdc96b543c7)
 Teraz uruchamiamy silnik
 ``` shell
 source ./sss_engine.sh
 ```
-Pomijając dużą ilość warning'ów patrzymy czy pojawil się komunikat o schemacie dannych oraz czy pojawiają się komunikaty jak na obrazie poniżej
-
-image
-
+Pomijając dużą ilość warning'ów patrzymy czy pojawil się komunikat o schemacie dannych
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/d8c2b217-c176-44af-90eb-f9cde794ac1e)
+I czy czy pojawiają się komunikaty jak na obrazie poniżej
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/654fdb9f-6422-4a85-9813-572faee41348)
 Gdy tak to wiemy że silnik dziala
 Zostalo tylko urychomić producenta
 ``` shell
 source ./kafka_producer.sh
 ```
-
+Gdy zostali wypisane parametry to producent zacząl dzialać
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/de0e856c-b1c9-4f5f-af12-ce150ddf964f)
 ## Wyniki
 Gdy wszystko uruchomilo się to musimy zacząć otrzymywać wyniki
 
 konsument surowych danych
-
-image
-
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/7ba6ad4b-92e8-471b-8786-f21fe655139b)
 konsument bazy dannych
-
-image
-
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/862b9fb7-e182-461b-9452-193f2f2a2ede)
 Dodatkowo możemy polączyć się z bazą ręcznie
 ```shell
+export PGPASSWORD='mysecretpassword'
 psql -h localhost -p 8432 -U postgres
 ```
 I sprawdzić ręcznie
 ```
-\c 
+\c netflix_prize_data
+select * from film_scores order by window_start;
 ```
-
-
-
 
 
 
