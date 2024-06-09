@@ -9,23 +9,17 @@ Facebook: Dima Optiman (https://www.facebook.com/dima.optiman/)
 ## Wgrywanie danych
 Zanim zaczniemy uruchamiać wszystko potrzebujemy dannych z jakimi będziemy pracować. Żeby nie wgrywać ich ręcznie na cluster wgramy ich do gcs po czym będziemy kopiować na cluster.
 Na początku wchodzimy w zakladke "Cloud Storage-> Buckets"
-
-image
-
+![Screenshot (114)](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/3352ab6d-8537-404c-91ee-27d55084d77a)
 Tutaj zjeżdżamy na dól i musimy już mieć stworzony bucket ( w ramach rodzialu "Utworzenie zasobnika (bucket)" z instrukcji "Konfiguracja środowiska zajęć - część 3 - zapoznanie się ze środowiskiem GCP: Storage, Dataproc")
-
-image
-
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/45a8d3d8-f179-4ac2-9d45-dd65e1ab5db7)
 Na przykladzie on ma nazwe "pbds-24-dp", może być inna nazwa ale wtedy będziemy musieli zmieniać plik konfiguracyjny.
 Klikamy na nazwe bucket'a i trafiamy do jego structury
-
-image
-
+![Screenshot (116)_1](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/9b754091-b9d2-48f3-8fbe-b4dc5f9bcf35)
 Tutaj za pomocy przycisków "Upload files"(dla "movie_titles.csv") oraz "Upload Folder" (dla folderu "netflix-prize-data") wgrywamy dane
+![Screenshot (116)_2](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/b5d883da-4296-455e-b6d5-2d5084d3a27d)
 Gdy w strukturze pojawili się wspomniany plik i folder wiemy że dane zostali zaladowane
-
-image
-
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/c4d4c1bc-5581-4d06-b848-2905b941c5ea)
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/b1dda180-1296-4428-93e3-c156b77426c0)
 ## Przygotowanie srodowiska
 Urachamiamy cluster wpisując do consoli polecenie
 
