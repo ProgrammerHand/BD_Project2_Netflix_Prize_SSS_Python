@@ -90,6 +90,7 @@ Gdy wszystko się uruchomi, musimy zacząć otrzymywać wyniki.
 Konsument surowych danych:
 
 ![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/7ba6ad4b-92e8-471b-8786-f21fe655139b)
+
 Konsument bazy danych:
 ![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/862b9fb7-e182-461b-9452-193f2f2a2ede)
 Dodatkowo, możemy połączyć się z bazą ręcznie:
