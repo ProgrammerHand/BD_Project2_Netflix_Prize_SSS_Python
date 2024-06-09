@@ -1,4 +1,4 @@
-# BD_Project2_Netflix_Prize_SSS_Python run instructio
+# BD_Project2_Netflix_Prize_SSS_Python run instruction
 
 ## Wstęp
 W razie jakichkolwiek pytań bardzo zalecam skontaktować się
