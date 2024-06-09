@@ -42,22 +42,25 @@ gs://goog-dataproc-initialization-actions-${REGION}/kafka/kafka.sh
 ```
 Po uruchomieniu otwieramy w nowej kartce polączenie ssh
 Sciągamy projekt z publicznego repozytorium i rozpakowujemy z folderu
-
 ```shell
 git clone https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python.git
 mv BD_Project2_Netflix_Prize_SSS_Python/* .
 ```
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/dd1192b4-7db3-4bf8-b534-894c89d50b22)
+
 Gdy uzywamy bucket'u innego niz ww to musimy wyedytowac plik z wartosciami parametrów srodowiska
 
 ``` shell
 nano env_params.sh
 ```
 Zmieniamy wartość BUCKET_NAME wpisując nazwe używanego bucket'u, zapisujemy i wychodzimy (Ctrl + s, Ctrl + x)
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/515f6f0f-bc8e-42e3-a27d-e8bf8050eff8)
 Po wykonaniu lub pominiencie poprzedniego kroku przygotowujemy środowisko
-
 ``` shell
 source ./env_setup.sh
 ```
+![image](https://github.com/ProgrammerHand/BD_Project2_Netflix_Prize_SSS_Python/assets/73993616/62a52387-f806-451b-870f-bfa686e939ab)
+
 
 # Uruchamianie aplikacji
 Zeby uruchomić aplikacje musimy uruchomić konsumenta\ów, silnik przetwarzający dane oraz producenta w oddzielnych terminalach ssh
